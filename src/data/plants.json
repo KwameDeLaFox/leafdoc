@@ -1,0 +1,61 @@
+[
+  {
+    "id": "monstera",
+    "name": "Monstera (Cheese Plant)",
+    "scientific_name": "Monstera deliciosa",
+    "issues": [
+      {
+        "id": "brown_tips",
+        "symptom": "Brown or Crispy Leaf Tips",
+        "steps": [
+          "Check soil moisture - usually caused by underwatering or low humidity.",
+          "Increase humidity by misting or using a pebble tray.",
+          "Check for direct sunlight - move if it's too intense.",
+          "Trim brown tips if desired with clean shears."
+        ]
+      },
+      {
+        "id": "yellow_leaves",
+        "symptom": "Yellowing Leaves",
+        "steps": [
+          "Check for overwatering - ensure top 2 inches of soil are dry before watering.",
+          "Ensure pot has drainage holes.",
+          "Check for drafty windows or cold spots."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "snake_plant",
+    "name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "issues": [
+      {
+        "id": "drooping",
+        "symptom": "Drooping or Mushy Leaves",
+        "steps": [
+          "Stop watering immediately - this is a classic sign of root rot.",
+          "Remove plant from pot and check for soft, black roots.",
+          "If rot is present, trim affected roots and repot in fresh, dry succulent mix.",
+          "Move to a brighter spot with indirect light."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pothos",
+    "name": "Pothos (Devil's Ivy)",
+    "scientific_name": "Epipremnum aureum",
+    "issues": [
+      {
+        "id": "small_leaves",
+        "symptom": "Small Leaves or Long Bare Stems",
+        "steps": [
+          "Increase light levels - while they tolerate low light, they grow best in bright indirect light.",
+          "Prune back bare stems to encourage bushier growth.",
+          "Fertilize lightly during growing season (spring/summer)."
+        ]
+      }
+    ]
+  }
+]
