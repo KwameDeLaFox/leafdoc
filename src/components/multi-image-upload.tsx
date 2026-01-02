@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { X, Plus, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import heic2any from "heic2any";
+
 
 interface MultiImageUploadProps {
     label: string;
@@ -43,6 +43,7 @@ export function MultiImageUpload({ label, description, onImagesChange }: MultiIm
             // Handle HEIC/HEIF conversion
             if (file.type === "image/heic" || file.type === "image/heif" || file.name.toLowerCase().endsWith(".heic")) {
                 try {
+                    const heic2any = (await import("heic2any")).default;
                     const convertedBlob = await heic2any({
                         blob: file,
                         toType: "image/jpeg",
