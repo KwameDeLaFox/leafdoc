@@ -23,10 +23,10 @@ Render will detect the `render.yaml` file and prompt you for the following envir
 | `AUTH_GOOGLE_SECRET` | Google OAuth Client Secret. |
 | `AUTH_SECRET` | Generated automatically by Render (or provide a random string). |
 | `NEXTAUTH_URL` | Your public Render URL (e.g., `https://leafdoc.onrender.com`). |
-| `DATABASE_URL` | Set to `file:/data/sqlite.db` (pre-configured in `render.yaml`). |
+| `DATABASE_URL` | Your **Neon.tech** connection string (e.g., `postgres://user:pass@ep-cool-name...`). |
 
 ### 3. Database Persistence
-The `render.yaml` file is pre-configured to create a **1GB Persistent Disk** mounted at `/data`. This ensures your SQLite database survives service restarts and deployments.
+By using **Neon.tech**, your database is managed externally. This ensures your plant scans and user data are preserved across deployments and server restarts, even on Render's Free tier.
 
 ### 4. Build & Deploy
 Once you click **Apply**, Render will:

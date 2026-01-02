@@ -2,14 +2,14 @@ services:
   - type: web
     name: leafdoc
     runtime: node
-    plan: free # Change to 'starter' or higher if you need more resources
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: npx prisma db push && npm start
     envVars:
       - key: NODE_VERSION
         value: 20
       - key: DATABASE_URL
-        value: file:/data/sqlite.db
+        sync: false # Set this to your Neon.tech connection string
       - key: REPLICATE_API_TOKEN
         sync: false
       - key: AUTH_SECRET
@@ -19,8 +19,4 @@ services:
       - key: AUTH_GOOGLE_SECRET
         sync: false
       - key: NEXTAUTH_URL
-        value: https://leafdoc.onrender.com # Replace with your actual Render URL
-    disk:
-      name: leafdoc-data
-      mountPath: /data
-      sizeGB: 1
+        value: https://leafdoc.onrender.com # Update with your actual Render URL
